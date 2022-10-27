@@ -1,0 +1,189 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "order_id",
+						"type": "uint256"
+					}
+				],
+				"name": "advanceOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_zipCode",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_products",
+						"type": "uint256[]"
+					}
+				],
+				"name": "createOrder",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "order_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getOrder",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "customer",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "zipCode",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "products",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "enum Store.Status",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Store.Order",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "orders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "customer",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "zipCode",
+						"type": "string"
+					},
+					{
+						"internalType": "enum Store.Status",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "order_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_zip",
+						"type": "string"
+					}
+				],
+				"name": "uploadzip",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"deps/proje/store.sol": "Store"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"deps/proje/store.sol": {
+			"keccak256": "0x90ee78f6c6c0c7dce0a9f341d539dac7f8d7359733c8463fc71a131e0222f106",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98931300e7616492982ce05dff2bd0387ee943aef3469e4343c2aed935c230a5",
+				"dweb:/ipfs/QmZj6sdAhv6nVav6TF3ZEXz1wjuvTqtMaJGsz6ndKFm7tc"
+			]
+		}
+	},
+	"version": 1
+}
